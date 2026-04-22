@@ -1,0 +1,198 @@
+[
+  {
+    "id": "ml-engineer",
+    "title": "Machine Learning Engineer",
+    "objective": "Highlight model development, evaluation, and integration into usable products.",
+    "keywordTargets": [
+      "machine learning",
+      "python",
+      "model",
+      "regression",
+      "classification",
+      "scikit-learn",
+      "data pipeline",
+      "analytics"
+    ],
+    "focusCapabilities": [
+      "Machine Learning to Product",
+      "Data and Analytics Engineering"
+    ],
+    "focusProjectKeywords": [
+      "prediction",
+      "analysis",
+      "classification",
+      "model",
+      "data"
+    ],
+    "questionSet": [
+      {
+        "id": "targetModelDomain",
+        "label": "Preferred ML domain",
+        "type": "select",
+        "options": [
+          "Regression",
+          "NLP",
+          "Computer Vision",
+          "General Applied ML"
+        ],
+        "required": false
+      },
+      {
+        "id": "customFocus",
+        "label": "ML focus statement",
+        "type": "text",
+        "required": false,
+        "maxLength": 220
+      }
+    ]
+  },
+  {
+    "id": "data-scientist",
+    "title": "Data Scientist",
+    "objective": "Emphasize data analysis, modeling, and insight generation from real-world datasets.",
+    "keywordTargets": [
+      "data science",
+      "python",
+      "statistics",
+      "machine learning",
+      "feature engineering",
+      "model evaluation",
+      "visualization",
+      "insights"
+    ],
+    "focusCapabilities": [
+      "Data and Analytics Engineering",
+      "Machine Learning to Product"
+    ],
+    "focusProjectKeywords": [
+      "analysis",
+      "unemployment",
+      "prediction",
+      "model",
+      "data"
+    ],
+    "questionSet": [
+      {
+        "id": "preferredBusinessArea",
+        "label": "Preferred business area",
+        "type": "select",
+        "options": [
+          "Finance",
+          "Education",
+          "Operations",
+          "Healthcare",
+          "General"
+        ],
+        "required": false
+      },
+      {
+        "id": "customFocus",
+        "label": "Data science focus statement",
+        "type": "text",
+        "required": false,
+        "maxLength": 220
+      }
+    ]
+  },
+  {
+    "id": "ai-engineer",
+    "title": "AI Engineer",
+    "objective": "Focus on building AI-powered applications from model logic to practical product usage.",
+    "keywordTargets": [
+      "artificial intelligence",
+      "machine learning",
+      "python",
+      "model integration",
+      "automation",
+      "workflow",
+      "applied ai",
+      "prediction"
+    ],
+    "focusCapabilities": [
+      "Machine Learning to Product",
+      "Product Delivery and Collaboration"
+    ],
+    "focusProjectKeywords": [
+      "mvp",
+      "prediction",
+      "workflow",
+      "model",
+      "product"
+    ],
+    "questionSet": [
+      {
+        "id": "targetModelDomain",
+        "label": "Preferred AI domain",
+        "type": "select",
+        "options": [
+          "General Applied AI",
+          "Regression",
+          "NLP",
+          "Computer Vision"
+        ],
+        "required": false
+      },
+      {
+        "id": "customFocus",
+        "label": "AI focus statement",
+        "type": "text",
+        "required": false,
+        "maxLength": 220
+      }
+    ]
+  },
+  {
+    "id": "product-manager",
+    "title": "Product Manager",
+    "objective": "Highlight product thinking, execution ownership, and user-problem focused delivery.",
+    "keywordTargets": [
+      "product",
+      "roadmap",
+      "user",
+      "execution",
+      "requirements",
+      "problem solving",
+      "delivery",
+      "collaboration"
+    ],
+    "focusCapabilities": [
+      "Product Delivery and Collaboration",
+      "Data and Analytics Engineering"
+    ],
+    "focusProjectKeywords": [
+      "campus",
+      "mvp",
+      "workflow",
+      "platform",
+      "product"
+    ],
+    "questionSet": [
+      {
+        "id": "targetIndustry",
+        "label": "Target industry",
+        "type": "text",
+        "required": false,
+        "maxLength": 120
+      },
+      {
+        "id": "targetCompanyType",
+        "label": "Target company type",
+        "type": "select",
+        "options": [
+          "Startup",
+          "Product Company",
+          "Service Company",
+          "Enterprise"
+        ],
+        "required": false
+      },
+      {
+        "id": "customFocus",
+        "label": "Product focus statement",
+        "type": "text",
+        "required": false,
+        "maxLength": 220
+      }
+    ]
+  }
+]

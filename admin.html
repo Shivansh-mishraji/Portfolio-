@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Admin Studio | Shivansh Mishra</title>
+  <meta name="description" content="Secure admin panel for role-based ATS resume automation and portfolio sync.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-one"></span>
+    <span class="orb orb-two"></span>
+    <span class="orb orb-three"></span>
+    <span class="grid-layer"></span>
+  </div>
+
+  <header class="admin-header">
+    <div class="admin-ribbon">
+      <span class="ribbon-indicator" aria-hidden="true"></span>
+      <p>Secure admin workspace for ATS tailoring, sync, and inbox review.</p>
+    </div>
+    <div class="header-inner">
+      <p class="brand">Admin Studio</p>
+      <div class="header-actions">
+        <a class="ghost-link" href="/" target="_blank" rel="noreferrer">Open Public Site</a>
+        <button id="logout-btn" class="btn" type="button" hidden>Log Out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <section id="session-warning" class="banner warning" hidden>
+      <p>
+        Security notice: you are using a temporary generated admin password. Set ADMIN_PASSWORD in environment for persistent secure access.
+      </p>
+    </section>
+
+    <section id="login-panel" class="panel login-panel" aria-labelledby="login-title">
+      <div class="panel-head">
+        <p class="tag">Protected Access</p>
+        <h1 id="login-title">Sign In to Resume Automation Studio</h1>
+        <p>Only authenticated admins can change role templates, answers, and sync operations.</p>
+      </div>
+
+      <form id="login-form" class="login-form" novalidate>
+        <label for="admin-password">
+          Admin Password
+          <input id="admin-password" name="password" type="password" autocomplete="current-password" required>
+        </label>
+        <button type="submit" class="btn btn-primary">Authenticate</button>
+        <p id="login-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section id="studio-panel" class="studio" hidden>
+      <section class="panel controls" aria-labelledby="resume-controls-title">
+        <div class="panel-head">
+          <p class="tag">Resume Controls</p>
+          <h2 id="resume-controls-title">Role-Based Resume Configuration</h2>
+          <p>Select job profile, answer role prompts, preview output, and save configuration.</p>
+        </div>
+
+        <div class="split-grid">
+          <article class="card">
+            <h3>Target Job Profile</h3>
+            <label for="profile-select" class="label-inline">Job profile</label>
+            <select id="profile-select" class="input"></select>
+            <p id="profile-objective" class="muted"></p>
+            <div id="keyword-chip-wrap" class="chip-wrap"></div>
+            <div class="inline-actions">
+              <button id="copy-keywords-btn" class="btn btn-small" type="button">Copy ATS Keywords</button>
+              <button id="reset-answers-btn" class="btn btn-small" type="button">Reset Answers</button>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Actions</h3>
+            <div class="health-grid">
+              <article class="health-item">
+                <p class="health-label">Completion</p>
+                <p id="completion-score" class="health-value">0%</p>
+              </article>
+              <article class="health-item">
+                <p class="health-label">ATS Score</p>
+                <p id="ats-score" class="health-value">--</p>
+              </article>
+            </div>
+            <div class="action-grid">
+              <button id="preview-btn" class="btn" type="button">Generate Preview</button>
+              <button id="save-btn" class="btn btn-primary" type="button">Save Config</button>
+              <button id="sync-btn" class="btn" type="button">Run Data Sync</button>
+            </div>
+            <p id="action-status" class="status" role="status" aria-live="polite"></p>
+            <p id="config-meta" class="muted"></p>
+            <p id="draft-meta" class="tiny-note"></p>
+          </article>
+        </div>
+
+        <article class="card form-card">
+          <h3>Role Question Set</h3>
+          <form id="answers-form" class="answers-form" novalidate></form>
+        </article>
+      </section>
+
+      <section class="panel preview" aria-labelledby="preview-title">
+        <div class="panel-head">
+          <p class="tag">ATS Preview</p>
+          <h2 id="preview-title">Generated Resume Snapshot</h2>
+          <p>This preview reflects your selected profile and answers before downloading.</p>
+        </div>
+
+        <article id="preview-card" class="preview-card empty">
+          <p class="empty-text">Generate a preview to inspect summary, strengths, skills, and project selection.</p>
+        </article>
+
+        <div class="download-links">
+          <a id="view-resume-link" class="btn" href="/resume" target="_blank" rel="noreferrer">Open Resume</a>
+          <a id="download-resume-txt-link" class="btn" href="/api/resume/download?format=txt">Download TXT</a>
+          <a id="download-resume-html-link" class="btn" href="/api/resume/download?format=html">Download HTML</a>
+        </div>
+        <p class="tiny-note">Downloads use saved configuration. Save config after editing answers so downloads reflect latest role inputs.</p>
+      </section>
+
+      <section class="panel messages" aria-labelledby="messages-title">
+        <div class="panel-head">
+          <p class="tag">Inbox</p>
+          <h2 id="messages-title">Contact Messages</h2>
+          <p>View recent inbound messages captured through the public contact API.</p>
+        </div>
+
+        <div class="messages-head">
+          <button id="refresh-messages-btn" class="btn" type="button">Refresh Messages</button>
+          <p id="messages-status" class="status" role="status" aria-live="polite"></p>
+        </div>
+
+        <div id="messages-list" class="messages-list"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="/admin.js" defer></script>
+</body>
+</html>

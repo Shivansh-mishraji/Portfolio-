@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivansh Mishra | Portfolio Architect</title>
+    <meta name="description" content="Professional portfolio of Shivansh Mishra showcasing projects, architecture capabilities, machine learning work, and dual GitHub accounts.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ambient" aria-hidden="true">
+        <span class="orb orb-one"></span>
+        <span class="orb orb-two"></span>
+        <span class="orb orb-three"></span>
+        <span class="grid-layer"></span>
+    </div>
+
+    <header class="site-header" data-reveal>
+        <div class="header-ribbon">
+            <span class="ribbon-indicator" aria-hidden="true"></span>
+            <p>Professional fresher focused on ML Engineer, Data Scientist, AI Engineer, and Product Manager roles. Verified data only.</p>
+            <a href="/resume" target="_blank" rel="noreferrer">Open resume</a>
+        </div>
+        <div class="header-inner">
+            <a class="brand" href="#home">Shivansh Mishra</a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="#fit">Role Fit</a>
+                <a href="#capabilities">Capabilities</a>
+                <a href="#projects">Projects</a>
+                <a href="#github">GitHub Proof</a>
+                <a href="#resume-lab">Resume</a>
+                <a href="#automation">Automation</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a class="header-cta" href="#contact">Work With Me</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home" data-reveal>
+            <div class="hero-copy">
+                <p class="hero-kicker">Professional Fresher • ML • AI • Data • Product</p>
+                <h1 id="hero-name">Loading profile...</h1>
+                <p class="hero-role" id="hero-role"></p>
+                <p class="hero-headline" id="hero-headline"></p>
+                <p class="hero-intro" id="hero-intro"></p>
+                <p class="hero-availability" id="hero-availability"></p>
+
+                <div class="hero-links">
+                    <a class="btn btn-resume" id="resume-view-link" href="/resume" target="_blank" rel="noreferrer">View ATS Resume</a>
+                    <a class="btn btn-resume" id="resume-download-link" href="/api/resume/download?format=txt">Download CV</a>
+                    <a class="btn btn-primary" id="email-link" href="mailto:shivanshmishraji90@gmail.com">Email</a>
+                    <a class="btn" id="linkedin-link" href="https://www.linkedin.com/in/shivansh-mishra-132b97358" target="_blank" rel="noreferrer">LinkedIn</a>
+                    <a class="btn" id="github-primary-link" href="https://github.com/Shivansh-mishraji" target="_blank" rel="noreferrer">GitHub 1</a>
+                    <a class="btn" id="github-secondary-link" href="https://github.com/Shivanshmishra7275" target="_blank" rel="noreferrer">GitHub 2</a>
+                </div>
+            </div>
+
+            <aside class="hero-side">
+                <div class="hero-side-head">
+                    <p class="section-tag">Live Proof</p>
+                    <h2>What this portfolio proves right now</h2>
+                    <p class="hero-side-note">A compact signal panel pulled from verified work, live sync data, and resume automation.</p>
+                </div>
+                <ul id="highlight-list"></ul>
+                <div class="hero-signal-grid">
+                    <article>
+                        <span>Resume mode</span>
+                        <strong>ATS-ready</strong>
+                    </article>
+                    <article>
+                        <span>Admin studio</span>
+                        <strong>Secure</strong>
+                    </article>
+                </div>
+            </aside>
+        </section>
+
+        <section class="metric-strip" data-reveal>
+            <article class="metric-card">
+                <p class="metric-label">Repositories</p>
+                <p class="metric-value" id="stat-repos">0</p>
+                <p class="metric-note">Across both GitHub accounts</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-label">Featured Projects</p>
+                <p class="metric-value" id="stat-projects">0</p>
+                <p class="metric-note">Curated and live portfolio work</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-label">Languages Used</p>
+                <p class="metric-value" id="stat-languages">0</p>
+                <p class="metric-note">From real repository activity</p>
+            </article>
+            <article class="metric-card">
+                <p class="metric-label">Primary Location</p>
+                <p class="metric-value metric-text" id="stat-location">-</p>
+                <p class="metric-note">Available for remote collaboration</p>
+            </article>
+        </section>
+
+        <section class="section" id="fit" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Hiring Readiness</p>
+                <h2>Role Fit Matrix for Multiple Job Profiles</h2>
+            </div>
+            <p class="section-intro">These fit indicators are generated from real projects, capabilities, and GitHub activity only.</p>
+            <div class="fit-grid" id="role-fit-grid"></div>
+        </section>
+
+        <section class="section" id="resume-lab" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">ATS Resume System</p>
+                <h2>Auto-Tailored Resume and CV Downloads</h2>
+            </div>
+            <div class="resume-lab">
+                <article class="resume-card">
+                    <h3>Public Resume Access</h3>
+                    <p>Open your tailored resume in browser or download it directly in ATS-friendly format.</p>
+                    <label for="public-profile-select" class="resume-select-label">Choose job profile</label>
+                    <select id="public-profile-select" class="resume-profile-select"></select>
+                    <div class="resume-actions">
+                        <a class="btn btn-resume" id="resume-view-link-2" href="/resume" target="_blank" rel="noreferrer">Open Resume</a>
+                        <a class="btn btn-resume" id="resume-download-link-2" href="/api/resume/download?format=txt">Download TXT</a>
+                        <a class="btn btn-resume" id="resume-download-html-link" href="/api/resume/download?format=html">Download HTML</a>
+                    </div>
+                    <div class="ats-insight">
+                        <p id="public-ats-score">ATS match score: --</p>
+                        <p id="public-ats-missing" class="tiny-note"></p>
+                    </div>
+                </article>
+                <article class="resume-card">
+                    <h3>Admin Resume Studio</h3>
+                    <p>Select target job profile, answer role questions, preview tailored output, and download in seconds.</p>
+                    <div class="resume-actions">
+                        <a class="btn" id="admin-studio-link" href="/admin">Open Admin Studio</a>
+                    </div>
+                    <p class="tiny-note">Truthful data policy: resume tailoring uses verified portfolio data only, without fake claims.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="capabilities" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Professional Strengths</p>
+                <h2>What I Can Build End-to-End</h2>
+            </div>
+            <div class="capability-grid" id="capability-grid"></div>
+        </section>
+
+        <section class="section" id="projects" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Project Intelligence</p>
+                <h2>High-Impact Work That Demonstrates Execution</h2>
+            </div>
+            <div class="project-grid" id="project-grid"></div>
+        </section>
+
+        <section class="section" id="github" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Public Proof of Work</p>
+                <h2>Dual GitHub Accounts, Unified Engineering Story</h2>
+            </div>
+            <div class="github-layout">
+                <div class="account-grid" id="account-grid"></div>
+                <div class="language-panel">
+                    <h3>Language Distribution</h3>
+                    <div class="language-cloud" id="language-cloud"></div>
+                    <p class="language-caption">Based on publicly available repositories and recent activity.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="architecture" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">System Thinking</p>
+                <h2>How I Architect and Deliver Products</h2>
+            </div>
+            <div class="architecture-grid" id="architecture-grid"></div>
+            <div class="services-shell">
+                <h3>Build Services</h3>
+                <ul id="services-list"></ul>
+            </div>
+        </section>
+
+        <section class="section section-split" id="journey" data-reveal>
+            <div class="journey-panel">
+                <h3>Experience Timeline</h3>
+                <ul class="timeline" id="timeline-list"></ul>
+            </div>
+            <div class="journey-panel">
+                <h3>Education</h3>
+                <ul class="timeline" id="education-list"></ul>
+            </div>
+        </section>
+
+        <section class="section" id="interests" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Beyond Work</p>
+                <h2>Personal Interests</h2>
+            </div>
+            <div class="interest-cloud" id="interest-list"></div>
+        </section>
+
+        <section class="section" id="automation" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Automation and Security</p>
+                <h2>Live Sync Signals and Platform Protection</h2>
+            </div>
+            <div class="automation-grid">
+                <article class="automation-card">
+                    <h3>Live Data Sync</h3>
+                    <p id="sync-status-text">Checking sync status...</p>
+                    <p id="linkedin-status-text"></p>
+                </article>
+                <article class="automation-card">
+                    <h3>Security Controls</h3>
+                    <ul id="security-list"></ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="contact" data-reveal>
+            <div class="section-head">
+                <p class="section-tag">Direct Connect</p>
+                <h2>Let Us Build Something Valuable Together</h2>
+            </div>
+            <div class="contact-layout">
+                <div class="contact-copy">
+                    <p>
+                        If you are hiring for internship or entry-level roles in ML, AI, data science, or product management,
+                        send a message and I will reply with next steps.
+                    </p>
+                    <p class="contact-meta">This form stores submissions securely through the backend API.</p>
+                </div>
+
+                <form class="contact-form" id="contact-form" novalidate>
+                    <label for="name">
+                        Name
+                        <input id="name" name="name" type="text" maxlength="80" required>
+                    </label>
+                    <label for="email">
+                        Email
+                        <input id="email" name="email" type="email" maxlength="120" required>
+                    </label>
+                    <label for="message">
+                        Message
+                        <textarea id="message" name="message" rows="5" maxlength="1000" required></textarea>
+                    </label>
+                    <button type="submit">Send Message</button>
+                    <p id="form-status" class="status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p id="footer-text"></p>
+    </footer>
+
+    <script src="app.js" defer></script>
+</body>
+</html>

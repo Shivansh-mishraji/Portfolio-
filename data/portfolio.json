@@ -1,0 +1,194 @@
+{
+  "profile": {
+    "name": "Shivansh Mishra",
+    "role": "Professional Fresher | ML Engineer, AI Engineer, Data Scientist, and Product Enthusiast",
+    "headline": "I am a professional fresher student building practical AI and data-driven projects with strong execution and learning agility.",
+    "location": "Lucknow, Uttar Pradesh, India",
+    "email": "shivanshmishraji90@gmail.com",
+    "phone": "+91 9651165190",
+    "linkedin": "https://www.linkedin.com/in/shivansh-mishra-132b97358",
+    "githubPrimary": "https://github.com/Shivansh-mishraji",
+    "githubSecondary": "https://github.com/Shivanshmishra7275",
+    "availability": "Open to internships, entry-level roles, and graduate opportunities"
+  },
+  "githubAccounts": [
+    "Shivansh-mishraji",
+    "Shivanshmishra7275"
+  ],
+  "positioning": {
+    "intro": "As a fresher, I approach projects with a problem-first mindset: understand user context, define scope clearly, and build reliable solutions step by step.",
+    "valueProposition": "I combine academic learning with practical projects in machine learning, analytics, and product-oriented execution."
+  },
+  "highlights": [
+    "Built projects across machine learning, data analysis, civic-tech, and campus platforms",
+    "Hands-on with Python, SQL, data visualization, and practical ML workflows",
+    "Professional fresher with strong problem-solving mindset and product intuition"
+  ],
+  "capabilityCards": [
+    {
+      "title": "Web Architecture",
+      "description": "Designing complete web systems from responsive frontend to API and persistence layers.",
+      "tools": [
+        "Node.js",
+        "JavaScript",
+        "TypeScript",
+        "REST APIs",
+        "SQL"
+      ]
+    },
+    {
+      "title": "Machine Learning to Product",
+      "description": "Building ML models, validating them, and shipping practical interfaces for real users.",
+      "tools": [
+        "Python",
+        "Pandas",
+        "NumPy",
+        "Scikit-Learn",
+        "Streamlit"
+      ]
+    },
+    {
+      "title": "Data and Analytics Engineering",
+      "description": "Turning raw datasets into decision-ready insights with clear visual storytelling.",
+      "tools": [
+        "Seaborn",
+        "Matplotlib",
+        "Jupyter",
+        "MySQL",
+        "SQLite"
+      ]
+    },
+    {
+      "title": "Product Delivery and Collaboration",
+      "description": "Delivering student-to-production style projects with maintainable structure, version control, and iterative improvements.",
+      "tools": [
+        "Git",
+        "GitHub",
+        "Feature Iteration",
+        "Documentation",
+        "Team Collaboration"
+      ]
+    }
+  ],
+  "featuredProjects": [
+    {
+      "name": "Smart Campus OS",
+      "summary": "A unified campus platform that centralizes attendance, navigation, complaints, and student services into one digital product.",
+      "challenge": "Students and campus teams often use disconnected systems that create delays and confusion.",
+      "impact": "Built a streamlined product vision that demonstrates scalable campus digitization with a modern frontend experience.",
+      "stack": [
+        "TypeScript",
+        "Next.js",
+        "UI Architecture",
+        "Product Design"
+      ],
+      "repo": "https://github.com/Shivanshmishra7275/Smart-Campus-OS",
+      "live": "https://smart-campus-os.vercel.app",
+      "sourceAccount": "Shivanshmishra7275"
+    },
+    {
+      "name": "Nyaya Mitra MVP",
+      "summary": "A legal-tech oriented MVP exploring digital support flows for legal guidance and case readiness.",
+      "challenge": "Legal accessibility workflows are usually complex and difficult for non-technical users.",
+      "impact": "Translated legal assistance concepts into a functional software prototype with practical information flow.",
+      "stack": [
+        "Python",
+        "Application Logic",
+        "Workflow Design"
+      ],
+      "repo": "https://github.com/Shivanshmishra7275/nyaya-mitra-mvp",
+      "sourceAccount": "Shivanshmishra7275"
+    },
+    {
+      "name": "House Price Prediction",
+      "summary": "A machine learning workflow that predicts housing prices using structured real-estate attributes.",
+      "challenge": "Pricing estimation can be noisy and biased without data-driven modeling.",
+      "impact": "Created reproducible prediction experiments and transformed them into user-friendly app experiences.",
+      "stack": [
+        "Python",
+        "Regression",
+        "Feature Engineering",
+        "Streamlit"
+      ],
+      "repo": "https://github.com/Shivansh-mishraji/House-Price-Prediction",
+      "sourceAccount": "Shivansh-mishraji"
+    },
+    {
+      "name": "Unemployment Analysis with Python",
+      "summary": "An analytics-focused project exploring unemployment trends through visualization and statistical interpretation.",
+      "challenge": "Raw socioeconomic data is hard to interpret without clear analytical narratives.",
+      "impact": "Produced interpretable insights and charts that communicate key employment trend shifts effectively.",
+      "stack": [
+        "Python",
+        "Pandas",
+        "Visualization",
+        "Jupyter Notebook"
+      ],
+      "repo": "https://github.com/Shivansh-mishraji/CodeAlpha_Unemployment-Analysis-with-Python",
+      "sourceAccount": "Shivansh-mishraji"
+    }
+  ],
+  "architecturePillars": [
+    {
+      "title": "Problem Discovery",
+      "details": "Start with user context, constraints, and measurable success criteria before coding.",
+      "outcome": "Builds products that solve real pain points instead of feature overload."
+    },
+    {
+      "title": "System Design",
+      "details": "Define frontend structure, API contracts, and data flow with separation of concerns.",
+      "outcome": "Enables faster iteration and easier future scaling."
+    },
+    {
+      "title": "Build and Integrate",
+      "details": "Develop responsive interfaces, robust backend routes, and machine learning or analytics modules.",
+      "outcome": "Delivers complete end-to-end functionality with maintainable code."
+    },
+    {
+      "title": "Measure and Improve",
+      "details": "Review behavior, gather feedback, and iterate quickly on performance and UX.",
+      "outcome": "Improves reliability and user trust over time."
+    }
+  ],
+  "services": [
+    "Portfolio and personal brand websites",
+    "App prototypes",
+    "Machine learning demo applications",
+    "Data analysis dashboards",
+    "API and backend design"
+  ],
+  "experienceTimeline": [
+    {
+      "period": "2025 - Present",
+      "title": "Independent ML and Data Projects",
+      "details": "Built and shipped multiple repositories spanning machine learning, analytics, and application workflows."
+    },
+    {
+      "period": "2024 - Present",
+      "title": "B.Tech CSE Fresher (Cloud and ML Specialization)",
+      "details": "Focused on building practical projects that connect academic learning to real-world deployable solutions."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science and Engineering",
+      "school": "Babu Banarasi Das University, Lucknow",
+      "period": "2024 - Present",
+      "details": "Specialization: Cloud Computing and Machine Learning"
+    },
+    {
+      "degree": "Higher Secondary Education",
+      "school": "Red Rose Public School",
+      "period": "2022 - 2024",
+      "details": "Science stream with mathematics focus"
+    }
+  ],
+  "interests": [
+    "Cycling",
+    "Traveling",
+    "Gardening",
+    "Cricket",
+    "Anime",
+    "Yoga"
+  ]
+}
